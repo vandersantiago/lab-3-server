@@ -12,4 +12,5 @@ public class Lab3ServerApplication {
 		SpringApplication.run(Lab3ServerApplication.class, args);
 	}
 System.out.prntln("teste3");
+System.out.prntln("teste4");
 }
