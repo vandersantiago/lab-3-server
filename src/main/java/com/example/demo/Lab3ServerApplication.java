@@ -11,5 +11,5 @@ public class Lab3ServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(Lab3ServerApplication.class, args);
 	}
-
+System.out.prntln("");
 }
