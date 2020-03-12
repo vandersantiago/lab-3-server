@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  hola:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: holaweb
+    ports:
+      - 8080
+    networks:
+      - network1
+    deploy:
+      mode: replicated
+      replicas: 6
+      update_config:
+        parallelism: 1
+        delay: 1s
+      restart_policy:
+        condition: on-failure
+networks:
+  network1:
